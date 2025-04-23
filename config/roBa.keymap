@@ -13,7 +13,7 @@
     quick-tap-ms = <0>;
 };
 
-&sl { release-after-ms = <1000>; };
+&sl { release-after-ms = <700>; };
 
 / {
     combos {

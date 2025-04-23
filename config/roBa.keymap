@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
+
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -138,8 +139,8 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
             tap-ms = <20>;
         };
     };
@@ -155,7 +156,7 @@
 &kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &lt_to_layer_0 4 INT5  &lt 5 SPACE  &lt_to_layer_0 2 INTERNATIONAL_4      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {

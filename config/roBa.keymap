@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 140
-
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -140,7 +139,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -151,7 +152,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W           &kp E         &kp R                  &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S           &kp D         &kp F                  &kp G        &kp LG(TAB)                           &kp HOME       &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp A             &kp S           &kp D         &kp F                  &kp G        &kp LG(TAB)                           &kp HOME       &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X           &kp C         &kp V                  &kp B        &kp LC(HOME)                          &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &lt_to_layer_0 4 INT5  &lt 5 SPACE  &lt_to_layer_0 2 INTERNATIONAL_4      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESCAPE
             >;
@@ -184,7 +185,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-           sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {

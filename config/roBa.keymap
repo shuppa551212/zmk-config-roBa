@@ -226,7 +226,7 @@
 &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt_to_layer_0 4 INT5  &lt_exit_AML 5 SPACE  &lt_exit_AML 2 INTERNATIONAL_4      &kp BACKSPACE  &kp ENTER                             &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {

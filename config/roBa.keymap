@@ -260,10 +260,10 @@
 
         MOUSE {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9  &kp F10                      &none   &none              &mkp_exit_AML MB3  &none              &none
-&none  &kp F4  &kp F5  &kp F6  &kp F11  &none       &none   &none   &mkp_exit_AML MB1  &kp UP             &mkp_exit_AML MB2  &none
-&none  &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &none   &kp LEFT           &kp DOWN           &kp RIGHT          &none
-&none  &none   &none   &trans  &trans   &trans      &trans  &trans                                                           &none
+&none  &kp_exit_AML F7  &kp_exit_AML F8  &kp_exit_AML F9  &kp_exit_AML F10                                 &none   &none              &mkp_exit_AML MB3  &none               &none
+&none  &kp_exit_AML F4  &kp_exit_AML F5  &kp_exit_AML F6  &kp_exit_AML F11  &none       &kp_exit_AML HOME  &none   &mkp_exit_AML MB1  &kp_exit_AML UP    &mkp_exit_AML MB2   &none
+&none  &kp_exit_AML F1  &kp_exit_AML F2  &kp_exit_AML F3  &kp_exit_AML F12  &none       &kp_exit_AML END   &none   &kp_exit_AML LEFT  &kp_exit_AML DOWN  &kp_exit_AML RIGHT  &none
+&none  &none            &none            &trans           &trans            &trans      &trans             &trans                                                            &none
             >;
 
             sensor-bindings = <&scroll_up_down>;

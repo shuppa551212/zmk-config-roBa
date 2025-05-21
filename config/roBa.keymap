@@ -260,10 +260,10 @@
 
         MOUSE {
             bindings = <
-&none      &kp_exit_AML F7  &kp_exit_AML F8  &kp_exit_AML F9  &kp_exit_AML F10                                 &none   &none              &mkp_exit_AML MB3  &none              &none
-&none      &kp_exit_AML F4  &kp_exit_AML F5  &kp_exit_AML F6  &kp_exit_AML F11  &none       &kp_exit_AML HOME  &none   &mkp_exit_AML MB1  &kp UP             &mkp_exit_AML MB2  &none
-&none      &kp_exit_AML F1  &kp_exit_AML F2  &kp_exit_AML F3  &kp_exit_AML F12  &none       &kp_exit_AML END   &none   &kp LEFT           &kp DOWN           &kp RIGHT          &none
-&kp LCTRL  &kp LEFT_SHIFT   &none            &trans           &trans            &trans      &trans             &trans                                                           &kp_exit_AML ESCAPE
+&none      &kp_exit_AML F7  &kp_exit_AML F8  &kp_exit_AML F9  &kp_exit_AML F10                                 &none   &none     &mkp MB3  &none      &none
+&none      &kp_exit_AML F4  &kp_exit_AML F5  &kp_exit_AML F6  &kp_exit_AML F11  &none       &kp_exit_AML HOME  &none   &mkp MB1  &kp UP    &mkp MB2   &none
+&none      &kp_exit_AML F1  &kp_exit_AML F2  &kp_exit_AML F3  &kp_exit_AML F12  &none       &kp_exit_AML END   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&kp LCTRL  &kp LEFT_SHIFT   &none            &trans           &trans            &trans      &trans             &trans                                 &kp_exit_AML ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;

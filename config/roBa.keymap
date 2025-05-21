@@ -296,7 +296,7 @@
         touch {
             column = <0>;
             row = <0>;
-            bindings = <&kp Z>;
+            bindings = <&mo 4>;
         };
     };
 };

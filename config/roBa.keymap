@@ -217,7 +217,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
+            debounce-ms = <10>;
             tap-ms = <20>;
         };
     };

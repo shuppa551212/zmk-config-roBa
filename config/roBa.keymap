@@ -217,9 +217,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            
+
             tap-ms = <25>;
-        
         };
     };
 
@@ -282,7 +281,7 @@
 &none      &none             &LR_PAR2     &SX_ST_DEF               &LR_SQT                             &LR_ASTRK      &LR_PAR           &LR_BRC     &LR_BKT           &LR_KAKKO
 &kp LC(C)  &kp LC(V)         &kp LC(X)    &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)  &none       &none    &kp SEMI       &kp LS(NUMBER_4)  &kp LS(N5)  &kp LS(NUMBER_6)  &kp SQT
 &kp LC(Z)  &kp LC(A)         &kp LG(TAB)  &kp LS(SLASH)            &kp LBKT       &none       &none    &kp LS(EQUAL)  &kp LS(NUMBER_1)  &LR_DQT     &kp LS(NUMBER_3)  &kp INTERNATIONAL_3
-&trans     &kp LS(CAPSLOCK)  &none        &trans                   &trans         &trans      &kp DEL  &kp LA(ENTER)                                                  &kp LS(INTERNATIONAL_3)
+&trans     &kp LS(CAPSLOCK)  &none        &trans                   &trans         &trans      &kp DEL  &kp TAB                                                        &kp LS(INTERNATIONAL_3)
             >;
         };
 
